@@ -1,5 +1,4 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -9,9 +8,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:gravity="center_horizontal"
+        android:layout_gravity="center"
         android:layout_marginTop="10dp"
-        android:layout_marginLeft="116dp"
         android:text="Vamos lá!"
         android:textAllCaps="true"
         android:textSize="26sp"
@@ -20,20 +18,20 @@
 
     <Button
         android:id="@+id/bsk_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
         android:text="Basquete"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="140dp"
+        android:layout_gravity="center"
         android:onClick="bskView"/>
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
         android:id="@+id/fut_button"
+        android:layout_width="120dp"
+        android:layout_height="80dp"
         android:text="Futsal"
         android:layout_marginTop="30dp"
-        android:layout_marginLeft="140dp"
+        android:layout_gravity="center"
         android:onClick="futView"/>
 
 </LinearLayout>
