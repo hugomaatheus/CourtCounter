@@ -6,18 +6,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.TextView;
 
-public class SetFutActivity extends AppCompatActivity {
+public class SetBskActivity extends AppCompatActivity {
 
-    int gameScore = 1;
+    int gameScore = 2;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_set_fut);
+        setContentView(R.layout.activity_set_bsk);
     }
 
     public void displayGameScore(int score) {
-        TextView scoreView = (TextView) findViewById(R.id.game_score_fut);
+        TextView scoreView = (TextView) findViewById(R.id.game_score_bsk);
         scoreView.setText(String.valueOf(score));
     }
 
@@ -27,16 +27,13 @@ public class SetFutActivity extends AppCompatActivity {
     }
 
     public void scoreSubcract(View v) {
-        if(gameScore > 0) {
-            gameScore--;
-            displayGameScore(gameScore);
-        }
+        gameScore--;
+        displayGameScore(gameScore);
     }
 
     public void saveScoreGame(View v) {
-        Intent i = new Intent(this, FutActivity.class);
-        i.putExtra("gameScoreFut", gameScore);
+        Intent i = new Intent(this, BskActivity.class);
+        i.putExtra("gameScoreBsk", gameScore);
         startActivity(i);
     }
-
 }

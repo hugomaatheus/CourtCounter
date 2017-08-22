@@ -18,7 +18,8 @@
         </activity>
         <activity android:name=".BskActivity" />
         <activity android:name=".FutActivity" />
-        <activity android:name=".SetFutActivity"></activity>
+        <activity android:name=".SetFutActivity" />
+        <activity android:name=".SetBskActivity"></activity>
     </application>
 
 </manifest>

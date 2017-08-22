@@ -17,7 +17,7 @@ public class MainActivity extends AppCompatActivity {
 
     //calling the basketball view
     public void bskView(View v) {
-        Intent i = new Intent(this, BskActivity.class);
+        Intent i = new Intent(this, SetBskActivity.class);
         startActivity(i);
     }
 

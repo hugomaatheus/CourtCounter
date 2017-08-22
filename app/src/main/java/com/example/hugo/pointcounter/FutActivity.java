@@ -18,7 +18,7 @@ public class FutActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Intent i = getIntent();
-        gameScore = i.getIntExtra("gameScore", -1);
+        gameScore = i.getIntExtra("gameScoreFut", -1);
         setContentView(R.layout.activity_fut);
     }
 
@@ -37,6 +37,7 @@ public class FutActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
 
         //checking the end game
+        //OPTIMIZAR MAIS DPS
         if(checkScore(scoreTeamA)) {
             Context c = getApplicationContext();
             CharSequence text = "Time A ganhou! Outra!!!";
@@ -50,6 +51,7 @@ public class FutActivity extends AppCompatActivity {
         displayForTeamB(scoreTeamB);
 
         //checking the end game
+        //OPTIMIZAR MAIS DPS
         if(checkScore(scoreTeamB)) {
             Context c = getApplicationContext();
             CharSequence text = "Time B ganhou! Outra!!!";
@@ -65,11 +67,10 @@ public class FutActivity extends AppCompatActivity {
     }
 
     public boolean checkScore(int score) {
-        if(score == gameScore) {
+        if(score == gameScore)
             return true;
-        }
+
         return false;
     }
-
 
 }

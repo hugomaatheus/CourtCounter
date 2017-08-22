@@ -4,6 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
+    android:background="#616161"
     tools:context="com.example.hugo.pointcounter.FutActivity">
 
     <LinearLayout
@@ -26,7 +27,7 @@
                 android:layout_margin="6dp"
                 android:paddingTop="16dp"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-medium"/>
 
             <TextView
@@ -39,13 +40,15 @@
                 android:paddingTop="16dp"
                 android:paddingBottom="24dp"
                 android:textSize="56sp"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-medium"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="goool!"
+                android:background="#000000"
+                android:textSize="18dp"
                 android:layout_marginRight="24dp"
                 android:layout_marginLeft="24dp"
                 android:layout_margin="6dp"
@@ -73,7 +76,7 @@
                 android:layout_margin="6dp"
                 android:paddingTop="16dp"
                 android:textSize="14sp"
-                android:textColor="#616161"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-medium"/>
 
             <TextView
@@ -86,13 +89,15 @@
                 android:layout_margin="6dp"
                 android:id="@+id/team_b_score"
                 android:textSize="56sp"
-                android:textColor="#000000"
+                android:textColor="#FFFFFF"
                 android:fontFamily="sans-serif-medium"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="goool!"
+                android:background="#000000"
+                android:textSize="18dp"
                 android:paddingBottom="8dp"
                 android:layout_margin="6dp"
                 android:layout_marginRight="24dp"
@@ -107,6 +112,8 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Reset"
+        android:background="#000000"
+        android:textSize="18dp"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:onClick="resetScore"/>
