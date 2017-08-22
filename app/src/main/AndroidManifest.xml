@@ -17,7 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".BskActivity" />
-        <activity android:name=".FutActivity"></activity>
+        <activity android:name=".FutActivity" />
+        <activity android:name=".SetFutActivity"></activity>
     </application>
 
 </manifest>

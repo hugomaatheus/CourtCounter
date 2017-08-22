@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     //calling the futsal view
     public void futView(View v) {
-        Intent i = new Intent(this, FutActivity.class);
+        Intent i = new Intent(this, SetFutActivity.class);
         startActivity(i);
     }
 
